@@ -9,9 +9,10 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 */
 
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
+	font-family: "Nothing you could do", Helvetica, Arial, sans-serif;
 	height: 100%;
+	color: white;
+	background: coral;
 }
 
 .loading {
@@ -25,27 +26,49 @@ body {
 #wrapper {
 	width: 710px;
 	margin: 0 auto;
+	text-align: center;
 }
 
-header, article {
-	font-weight: 800;
-	color: #000;
+h1, #title {
+	font-family: "Sacramento", Helvetica, Arial, sans-serif;
+	margin: 80px 0;
+	font-size: 80px;
+}
+
+h1 {
+	margin-bottom: 40px;
+}
+
+p {
+	font-size: 40px;
+	margin-bottom: 80px;
 }
 
 header {
-	margin-top: 70px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
 }
 
-header h1 {
-	font-size: 60px;
-	line-height: 60px;
-	display: none;
+header img {
+	width: 10vw;
+}
+
+header img:first-of-type {
+	transform: rotateY(180deg)
+}
+
+header img:first-of-type {
+
+}
+
+article {
+	font-weight: 800;
 }
 
 #output {
-	font-size: 48px;
-	line-height: 48px;
-	margin: 60px 0;
+	font-size: 40px;
+	margin: 60px 0 80px;
 }
 
 #output.animate {
@@ -65,18 +88,27 @@ noscript {
 
 #output dd {
 	display: block;
-	margin: 60px 0;
 }
 
 #generate {
 	text-decoration: none;
 	font-size: 20px;
-	color: #000;
+	border: white 1px solid;
+	padding: 10px 20px;
+	border-radius: 20px;
+	color: coral;
+	background: white;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+#generate:visited {
+	opacity: 0.8;
 }
 
 #generate:hover {
-	text-decoration: underline;
-	color: black;
+	color: white;
+	background: coral;
 }
 
 aside {
@@ -104,7 +136,6 @@ footer {
 	text-align: right;
 	line-height: 16px;
 	font-size: 12px;
-	color: #666;
 	margin: 12px 24px;
 	bottom: 0;
 	right: 0;
